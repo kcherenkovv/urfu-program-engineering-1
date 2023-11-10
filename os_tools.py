@@ -1,4 +1,5 @@
 import shutil
+import os
 
 
 def remove_folder(folder_path):
@@ -6,3 +7,6 @@ def remove_folder(folder_path):
         shutil.rmtree('results/')
     except Exception as e:
         print('Failed to delete %s. ' % folder_path)
+
+
+

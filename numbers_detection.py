@@ -12,10 +12,10 @@ def load_model():
     return model
 
 
-def process_image(model, img_path):
+def process_image(model, img):
     ost.remove_folder('results/')
-    results = model(img_path, size=640)
-    results = model(img_path, augment=True)
+    results = model(img, size=640)
+    results = model(img, augment=True)
     predictions = results.pred[0]
     boxes = predictions[:, :4]  # x1, y1, x2, y2
     scores = predictions[:, 4]

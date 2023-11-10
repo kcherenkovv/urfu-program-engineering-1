@@ -7,6 +7,5 @@ if __name__ == '__main__':
     web_view.init()
     img = web_view.load_image()
     if img is not None:
-        img.save("upload/car_image.jpg")
-        nd.process_image(model, 'upload/car_image.jpg')
-        web_view.show_result(Image.open('results/car_image.jpg'))
+        nd.process_image(model, img)
+        web_view.show_result(Image.open('results/image0.jpg'))
