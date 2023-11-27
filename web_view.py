@@ -20,6 +20,9 @@ def init():
 
 
 def show_result(img):
-    st.title('Результат распознавания')
     st.image(img)
+
+
+def show_result_title():
+    st.title('Результат распознавания')
 

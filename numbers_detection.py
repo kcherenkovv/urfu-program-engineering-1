@@ -1,7 +1,9 @@
 import yolov5
-import os_tools as ost
+from PIL import Image
+import streamlit as st
 
 
+@st.cache_data
 def load_model():
     model = yolov5.load('keremberke/yolov5m-license-plate')
     model.conf = 0.25  # NMS confidence threshold
@@ -13,13 +15,20 @@ def load_model():
 
 
 def process_image(model, img):
-    ost.remove_folder('results/')
     results = model(img, size=640)
     results = model(img, augment=True)
     predictions = results.pred[0]
     boxes = predictions[:, :4]  # x1, y1, x2, y2
     scores = predictions[:, 4]
     categories = predictions[:, 5]
-    results.save(save_dir='results/')
-    return results
+    # numpy_image = results.render()[0]
+    # output_image = Image.fromarray(numpy_image)
+    numpy_images = results.crop(save=False)
+    # print(numpy_images[0])
+
+    output_imgs = list()
+    for numpy_img in numpy_images:
+        output_imgs.append(Image.fromarray(numpy_img['im']))
+    # print(output_imgs)
+    return output_imgs
 
