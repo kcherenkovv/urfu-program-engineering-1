@@ -19,8 +19,12 @@ def init():
     st.title('Поиск автомобильных номеров на изображении')
 
 
-def show_result(img):
-    st.image(img)
+def show_result(number_image, number_text):
+    st.image(number_image)
+    if number_text is None or len(number_text) == 0:
+        st.subheader('Не удалось распознать номер на этом фрагменте')
+    else:
+        st.subheader(number_text)
 
 
 def show_result_title():
