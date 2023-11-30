@@ -1,0 +1,7 @@
+yolov5
+streamlit
+Image
+python-multipart
+transformers
+fastapi
+uvicorn
