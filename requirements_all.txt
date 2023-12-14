@@ -3,3 +3,6 @@ opencv-python-headless
 streamlit
 Image
 python-multipart
+transformers
+fastapi
+uvicorn
