@@ -27,6 +27,10 @@ def show_result(number_image, number_text):
         st.subheader(number_text)
 
 
+def show_result_small(number_image):
+    st.image(number_image)
+
+
 def show_result_title():
     st.title('Результат распознавания')
 
