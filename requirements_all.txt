@@ -6,3 +6,4 @@ python-multipart
 transformers
 fastapi
 uvicorn
+httpx-file

@@ -30,7 +30,7 @@
 Он принимает единственный параметр - изображение в формате [multipart/form-data] и возвращает массив с распознанными
 на изображении номерами.
 - Пример запроса через CURL:
-`curl -X 'POST' 'http://127.0.0.1:8000/recognize' -H 'accept: application/json' -H 'Content-Type: multipart/form-data' -F 'file=@example_3.jpg;type=image/jpeg'`
+`curl -X 'POST' 'http://127.0.0.1:8000/recognize' -F 'file=@example_1.jpg;type=image/jpeg'`
  
 ### Что планируется сделать
 - Выложить готовое решение на хостинг для доступа через интернет.

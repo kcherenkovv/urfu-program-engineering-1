@@ -11,6 +11,11 @@ nd_model = nd.load_model()
 ocr = textocr.get_instance()
 
 
+@app.get("/")
+def hello():
+    return {"message": "Welcome to the ALPR app"}
+
+
 @app.post("/recognize")
 async def recognize(file: UploadFile):
     image_data = file.file.read()
