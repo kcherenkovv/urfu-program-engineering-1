@@ -32,8 +32,8 @@
 - Пример запроса через CURL:
 `curl -X 'POST' 'http://127.0.0.1:8000/recognize' -F 'file=@example_1.jpg;type=image/jpeg'`
  
-### Что планируется сделать
-- Выложить готовое решение на хостинг для доступа через интернет.
+### Демо-версия приложения в облаке STREAMLIT доступна по ссылке:
+https://urfu-program-engineering-1-group-1-18.streamlit.app/
 
 ## Команда
 - #### Алексей Муравьев
