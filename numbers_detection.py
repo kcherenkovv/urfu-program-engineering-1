@@ -22,6 +22,7 @@ def process_image(model, img):
     scores = predictions[:, 4]
     categories = predictions[:, 5]
     # numpy_image = results.render()[0]
+    # numpy_image = results.render()[1]
     numpy_images = results.crop(save=False)
     output_imgs = list()
     for numpy_img in numpy_images:
