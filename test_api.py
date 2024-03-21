@@ -18,3 +18,9 @@ def test_recognize():
             "filename", open('example_img/example_1.jpg', "rb"), "image/jpeg")}
     )
     assert response.text == '["B088BB 88"]'
+
+def test_translate():
+    response = client.post("/tranlslate/",
+                          json={"text":"I love machine learning"})
+    assert response.status_code == 200
+    assert response.json()["translated_text"] == "Я люблю машинное обучение!"
