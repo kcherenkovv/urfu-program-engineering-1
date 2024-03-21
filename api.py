@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile
 import numbers_detection as nd
 import ocr as textocr
 from PIL import Image

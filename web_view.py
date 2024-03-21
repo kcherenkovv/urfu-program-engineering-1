@@ -33,4 +33,3 @@ def show_result_small(number_image):
 
 def show_result_title():
     st.title("Результаты поиска:")
-

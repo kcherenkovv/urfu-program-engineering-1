@@ -14,6 +14,7 @@ def test_hello():
 def test_recognize():
     response = client.post(
         "/recognize",
-        files={"file": ("filename", open('example_img/example_1.jpg', "rb"), "image/jpeg")}
+        files={"file": (
+            "filename", open('example_img/example_1.jpg', "rb"), "image/jpeg")}
     )
     assert response.text == '["B088BB 88"]'

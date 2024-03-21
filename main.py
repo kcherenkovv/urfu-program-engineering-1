@@ -22,5 +22,6 @@ if __name__ == '__main__':
             for number_image in result_images:
                 # Распознавание текста на изображении номера
                 number_text = ocr.process_image(number_image)
-                # Отрисовка результата - изображение номера и распознанный на нём текст
+                # Отрисовка результата - изображение
+                # номера и распознанный на нём текст
                 web_view.show_result(number_image, number_text)
