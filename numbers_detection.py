@@ -17,12 +17,6 @@ def load_model():
 def process_image(model, img):
     results = model(img, size=640)
     results = model(img, augment=True)
-    # predictions = results.pred[0]
-    # boxes = predictions[:, :4]  # x1, y1, x2, y2
-    # scores = predictions[:, 4]
-    # categories = predictions[:, 5]
-    # numpy_image = results.render()[0]
-    # numpy_image = results.render()[1]
     numpy_images = results.crop(save=False)
     output_imgs = list()
     for numpy_img in numpy_images:
