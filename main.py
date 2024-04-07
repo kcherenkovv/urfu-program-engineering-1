@@ -1,6 +1,6 @@
 import numbers_detection as nd
 import web_view
-import ocr
+import image_processing as ocr
 
 
 if __name__ == '__main__':
