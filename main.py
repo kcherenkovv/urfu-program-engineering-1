@@ -1,6 +1,7 @@
 import numbers_detection as nd
 import web_view
 import image_processing as ocr
+from find_region import find_region
 
 
 if __name__ == '__main__':
@@ -22,6 +23,9 @@ if __name__ == '__main__':
             for number_image in result_images:
                 # Распознавание текста на изображении номера
                 number_text = ocr.process_image(number_image)
+                region = find_region(number_text)
                 # Отрисовка результата - изображение
                 # номера и распознанный на нём текст
-                web_view.show_result(number_image, number_text)
+                web_view.show_result(number_image, number_text, region)
+                
+
