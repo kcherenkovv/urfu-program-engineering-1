@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st
 
 
-@st.cache_data
+@st.cache
 def load_model():
     model = yolov5.load('keremberke/yolov5m-license-plate')
     model.conf = 0.25  # NMS confidence threshold
