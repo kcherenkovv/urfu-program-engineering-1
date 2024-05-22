@@ -14,7 +14,6 @@
 - Для распознавания текста используется модель из Hugging Face [microsoft/trocr-base-printed]
 - Интерфейс пользователя - библиотека [streamlit]
 - Для работы API - FastAPI и uvicorn
-- 
 ### Системные требования
 - Компьютер и система удовлетворяющие требованиям PyTorch
   - Подробнее на офф. сайте: https://pytorch.org/get-started/locally/
