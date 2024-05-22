@@ -1,3 +1,4 @@
+[![Tests](https://github.com/kcherenkovv/urfu-program-engineering-2/actions/runs/9191643711/workflow)](https://github.com/kcherenkovv/urfu-program-engineering-2/actions/runs/9191643711/job/25278493503)
 # Распознавание автомобильных номеров и определение региона регистрации автомобиля
 
 Проект по курсу "Программная инженерия 2" магистратуры УРФУ
