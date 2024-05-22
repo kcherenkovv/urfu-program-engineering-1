@@ -4,3 +4,4 @@ streamlit
 Image
 python-multipart
 transformers
+opencv-python
