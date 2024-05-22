@@ -1,4 +1,3 @@
-@st.cache
 def find_region(number_plate):
     regions = {
         '01': 'Республика Адыгея (Адыгея)',
