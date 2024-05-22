@@ -1,5 +1,5 @@
 yolov5
-opencv-python-headless
+opencv-python
 streamlit
 Image
 python-multipart
