@@ -1,6 +1,5 @@
 yolov5
-opencv-python
+opencv-python-headless
 streamlit
 Image
 python-multipart
-transformers
