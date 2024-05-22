@@ -1,4 +1,4 @@
-[![Tests](https://github.com/kcherenkovv/urfu-program-engineering-2/actions/runs/9191643711/badge.svg)](https://github.com/kcherenkovv/urfu-program-engineering-2/actions/runs/9191643711)
+[![Tests](https://github.com/kcherenkovv/urfu-program-engineering-2/actions/workflows/python-app.yml/badge.svg)](https://github.com/kcherenkovv/urfu-program-engineering-2/actions/workflows/python-app.yml)
 # Распознавание автомобильных номеров и определение региона регистрации автомобиля
 
 Проект по курсу "Программная инженерия 2" магистратуры УРФУ
