@@ -24,6 +24,6 @@ class LicensePlateRecognizer:
         return generated_text
 
 #Применяем декоратор для кеширования результатов, чтобы избежать повторных вычислений
-@st.cache_data
+@st.cache
 def get_instance():
     return LicensePlateRecognizer()
