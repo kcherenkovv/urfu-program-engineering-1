@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile
-import numbers_detection as nd
-import image_processing as textocr
+import scripts.numbers_detection as nd
+import scripts.image_processing as textocr
 from PIL import Image
 import io
 

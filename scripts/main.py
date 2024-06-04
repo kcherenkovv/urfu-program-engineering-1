@@ -1,7 +1,7 @@
-import numbers_detection as nd
-import web_view
-import image_processing as ocr
-from find_region import find_region
+import scripts.numbers_detection as nd
+import scripts.web_view as web_view
+import scripts.image_processing as ocr
+from scripts.find_region import find_region
 
 
 if __name__ == '__main__':

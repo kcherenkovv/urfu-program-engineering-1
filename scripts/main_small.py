@@ -1,5 +1,5 @@
-import numbers_detection as nd
-import web_view
+import scripts.numbers_detection as nd
+import scripts.web_view as web_view
 
 
 if __name__ == '__main__':
