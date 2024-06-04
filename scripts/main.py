@@ -27,5 +27,3 @@ if __name__ == '__main__':
                 # Отрисовка результата - изображение
                 # номера и распознанный на нём текст
                 web_view.show_result(number_image, number_text, region)
-                
-

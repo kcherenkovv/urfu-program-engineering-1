@@ -1,8 +1,11 @@
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 import streamlit as st
 
-#Создаём класс для обработка изображений с помощью библиотеки transofrmers
+# Создаём класс для обработки изображений с помощью библиотеки transformers
+
+
 class LicensePlateRecognizer:
+
     __processor = None
     __model = None
 
@@ -23,7 +26,10 @@ class LicensePlateRecognizer:
         )[0]
         return generated_text
 
-#Применяем декоратор для кеширования результатов, чтобы избежать повторных вычислений
+
+# Применяем декоратор для кеширования результатов,
+# чтобы избежать повторных вычислений
+
 @st.cache_data
 def get_instance():
     return LicensePlateRecognizer()
