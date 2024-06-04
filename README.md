@@ -24,7 +24,7 @@
 
 ### Как запустить WEB streamlit
 - Установить PyTorch:    https://pytorch.org/get-started/locally/  
-- Установить зависимости:    `pip install -r requirements.txt`
+- Установить зависимости:    `pip install -r requirements_dev.txt`
 - Запустить проект с помощью streamlit: 
   `streamlit run main.py`
 - Через браузер открыть адрес, указанный в streamlit и загрузить изображение.
