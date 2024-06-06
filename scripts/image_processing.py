@@ -1,5 +1,6 @@
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 import streamlit as st
+import re
 
 # Создаём класс для обработки изображений с помощью библиотеки transformers
 
@@ -24,7 +25,10 @@ class LicensePlateRecognizer:
         generated_text = self.__processor.batch_decode(
             generated_ids, skip_special_tokens=True
         )[0]
-        return generated_text
+        return self.post_process_plate_text(generated_text)
+
+    def post_process_plate_text(self, plate_text):
+        return re.sub(r'[\W_]+', '', plate_text)
 
 
 # Применяем декоратор для кеширования результатов,
