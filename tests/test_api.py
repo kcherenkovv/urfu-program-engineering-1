@@ -17,4 +17,4 @@ def test_recognize():
         files={"file": (
             "filename", open('example_img/example_1.jpg', "rb"), "image/jpeg")}
     )
-    assert response.text == '["B088BB 88"]'
+    assert response.text == '["B088BB88"]'
